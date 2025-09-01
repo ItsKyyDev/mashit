@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Mingguan Futuristik</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>📅</h2>
+      <ul id="day-list">
+        <li data-day="Senin" class="active">Sen</li>
+        <li data-day="Selasa">Sel</li>
+        <li data-day="Rabu">Rab</li>
+        <li data-day="Kamis">Kam</li>
+        <li data-day="Jumat">Jum</li>
+        <li data-day="Sabtu">Sab</li>
+        <li data-day="Minggu">Min</li>
+      </ul>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <header class="header">
+        <h1 id="day-title">Senin</h1>
+        <div class="task-input">
+          <input type="text" id="task-text" placeholder="✍️ Tulis tugas...">
+          <input type="date" id="task-date">
+          <button id="add-task">➕</button>
+        </div>
+      </header>
+
+      <section class="task-list" id="task-list">
+        <!-- Task cards akan muncul di sini -->
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
